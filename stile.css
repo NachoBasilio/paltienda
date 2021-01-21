@@ -7,6 +7,9 @@
 html{
     font-size: 62.5%;
 }
+body{
+    height: 100vh;
+}
 
 header{
     display: flex;
@@ -44,12 +47,24 @@ header{
     width: 250px;
     background-color: #4A5C4A;
     margin: 15px 0 15px 0;
+    position: relative;
+}
+.Data{
+    background-color: #333333;
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
 }
 
 @media (min-width: 400px){
     .Palta{
         height: 350px;
         width: 350px; 
+    }
+    .Data{
+        height: 100px;
+        width: 350px;
     }
 }
 
@@ -69,5 +84,12 @@ header{
         width: 1000px;
         margin: 0 auto;
         height: 100%;
+    }
+    Header{
+        margin-bottom: 50px;
+    }
+    .Data{
+        height: 100px;
+        width: 350px; 
     }
 }
