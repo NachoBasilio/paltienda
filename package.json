@@ -1,0 +1,11 @@
+{
+  "name": "platienda",
+  "version": "1.0.0",
+  "description": "Una pagina web sobre venta de paltas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
