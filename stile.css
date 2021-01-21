@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 3px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.Titulo{
+    margin: 10px 0 10px 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.6rem;
+    color: #112610;
+    text-shadow: #4A5C4A 0px 5px 10px;
+    
+}
+.SubTitulo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem; 
+    text-align: center;
+    text-shadow: #4A5C4A 0px 5px 10px;
+    margin: 0 0 10px 0;
+}
+
+.Productos{
+    display: flex;
+    background-color: #D2DCD2;
+    flex-direction: column;
+    align-items: center;
+}
+.Palta{
+    height: 250px;
+    width: 250px;
+    background-color: #4A5C4A;
+    margin: 15px 0 15px 0;
+}
+
+@media (min-width: 400px){
+    .Palta{
+        height: 350px;
+        width: 350px; 
+    }
+}
+
+@media (min-width: 700px){
+    .Productos{
+        flex-direction: inherit;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .Palta{
+        margin: 15px auto;
+    }
+
+}
+@media (min-width: 1000px){
+    .Productos{
+        width: 1000px;
+        margin: 0 auto;
+        height: 100%;
+    }
+}
