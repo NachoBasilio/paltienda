@@ -14,11 +14,23 @@ body{
 header{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-    margin: 3px;
-    border-radius: 15px;
     padding: 5px;
+    background-color: #ECECEC;
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icono{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+.icono:hover{
+    background-color: white;
+    padding: 10px;
+    border-radius: 25%;
 }
 .Titulo{
     margin: 10px 0 10px 0;
@@ -49,21 +61,29 @@ header{
     margin: 15px 0 15px 0;
     position: relative;
 }
+.Palta img{
+    object-position: center;
+    height: 100%;
+    
+}
 .Data{
     background-color: #333333;
-    height: 50px;
+    height: auto;
     width: 250px;
     position: absolute;
     bottom: 0;
 }
-
+.Texto{
+    color: white;
+}
+ 
 @media (min-width: 400px){
     .Palta{
         height: 350px;
         width: 350px; 
     }
     .Data{
-        height: 100px;
+        height: auto;
         width: 350px;
     }
 }
@@ -82,14 +102,14 @@ header{
 @media (min-width: 1000px){
     .Productos{
         width: 1000px;
-        margin: 0 auto;
-        height: 100%;
+        margin: 0 auto; 
     }
-    Header{
-        margin-bottom: 50px;
+    header{
+        width: 1000px;
+        margin: 0 auto;
     }
     .Data{
-        height: 100px;
+        height: auto;
         width: 350px; 
     }
 }
